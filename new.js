@@ -23,3 +23,24 @@ function A(d){
 }
 let child = _new(A,1)
 console.log(child)
+
+/**
+ * es6递归实现数组扁平化处理
+ */
+const flatten = array => array.reduce(
+  (acc, cur) => (
+    Array.isArray(cur) ? [...acc, ...flatten(cur)] : [...acc, cur]
+  ), []
+)
+
+/**
+ * 迭代实现数组扁平化
+ * @param(arr)
+ * @return(arr)
+ */
+function flattens(arr) {
+  while (arr.some(item => Array.isArray(item))) {
+    arr = [].concat(...arr)
+  }
+  return arr
+}
