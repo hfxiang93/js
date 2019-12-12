@@ -1,0 +1,40 @@
+{
+  "name": "es6-webpack",
+  "version": "1.0.0",
+  "description": "study es6 and webpack",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --mode development",
+    "build": "webpack --open --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hfxiang93/js.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "xianghaifeng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hfxiang93/js/issues"
+  },
+  "homepage": "https://github.com/hfxiang93/js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "autoprefixer": "^9.7.3",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.3.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
