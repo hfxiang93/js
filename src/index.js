@@ -1,5 +1,6 @@
 import './css/style.css';   // 引入css
 // import './less/style.less'; // 引入less
+// import './websocket-cilent.js'
 // 事件循环机制
 console.log('start')
 setTimeout(function(){
