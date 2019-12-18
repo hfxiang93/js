@@ -16,3 +16,12 @@ function Student (name) {
 }
 let student = new Student('jack')
 student.hello()
+// 取数组的最大值
+// ES5写法
+Math.max.apply(null,[1,2,3,45,2,5])
+// ES6写法
+Math.max(...[1,2,43,3,5])
+// 递归写法reduce
+[1,23,32,5,43,2].reduce((x,y)=>{
+  return x = x > y ? x : y
+})
